@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Repositório Sinodal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta name="description" content="Repositório digital de arquivos PDF Colégio Sinodal Prado Gravataí">
+    <meta name="author" content="Sinodal Prado Gravataí">
+</head>
+<body>
+    <header id="siteHeader">
+        <a href="../home/index.html" class="home" aria-label="Página inicial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 2.1L1 12h3v9h6v-7h4v7h6v-9h3z"/>
+            </svg>
+        </a>
+        <a href="#" class="logo-1" aria-label="Logo Sinodal">
+            <img src="../imagens/p_acdm.png" alt="Logo Sinodal" />
+        </a>
+        
+    </header>
+
+   
+  
+
+ <main class="fade-in">
+
+
+ <h2 class="section-title">Repositório</h2>
+ <div class="search-bar" role="search">
+  <label for="searchInput" class="sr-only">Buscar artigo</label>
+  <input
+    type="search"
+    id="searchInput"
+    placeholder="Buscar por título, autor, palavra-chave ou ano..."
+    aria-label="Buscar artigos no repositório"
+  />
+</div>
+
+<div class="repository-year">
+  <button class="year-button" id="edicaoAtual">2025 - Edição Atual</button>
+  <div class="year-content">
+    <div class="files-grid">
+      <div class="file-card slide-up">
+        <div class="file-header">
+          <div class="file-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="file-content">
+          <h3 class="file-title">Os impactos do consumo de bebidas alcoólicas no desenvolvimento neurológico de adolescentes</h3>
+          <p class="file-description">Autores: Matheus Souza e Francisco Pereira</p>
+          <p class="file-description">Palavras chave: teste, 2025, alcool</p>
+          <p></p>
+          <a href="#" class="file-action" data-pdf="../imagens/pdfs/OS IMPACTOS DO CONSUMO DE BEBIDAS ALCOÓLICAS NO DESENVOLVIMENTO NEUROLÓGICO DE ADOLESCENTES.pdf">
+            Ver PDF
+          </a>
+          <a href="../imagens/pdfs/manual-agil.pdf" download="Impactos-Consumo-Alcoolico.pdf" class="file-action">Baixar PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="year-button">2024</button>
+  <div class="year-content">
+    <div class="files-grid">
+      <div class="file-card slide-up">
+        <div class="file-header">
+          <div class="file-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="file-content">
+          <h3 class="file-title">Guia de Programação Básica</h3>
+          <p class="file-description">Introdução à programação com exemplos práticos e exercícios para iniciantes em desenvolvimento.</p>
+          <p class="file-description">Autores: Francisco Pereira</p>
+          <a href="#" class="file-action" data-pdf="../imagens/guia-programacao.pdf">
+            Ver PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="year-button">2023</button>
+  <div class="year-content">
+    <div class="files-grid">
+      <div class="file-card slide-up">
+        <div class="file-content">
+          <h3 class="file-title">Manual de Metodologias Ágeis</h3>
+          <p class="file-description">Documentação completa sobre Scrum, Kanban e outras metodologias ágeis.</p>
+          <p class="file-description">Autores: Matheus Souza</p>
+          <a href="#" class="file-action" data-pdf="../imagens/pdfs/manual-agil.pdf">
+            Ver PDF
+          </a>
+        </div>
+     </div>
+    </div>
+    <div class="file-card slide-up">
+        <div class="file-content">
+          <h3 class="file-title">Manual de Metodologias Ágeis</h3>
+          <p class="file-description">Documentação completa sobre Scrum, Kanban e outras metodologias ágeis.</p>
+          <p class="file-description">Autores: Matheus Souza</p>
+         
+          <a href="#" class="file-action" data-pdf="../imagens/pdfs/manual-agil.pdf">
+            Ver PDF
+          </a>
+        </div>
+        </div>
+  </div>
+</div>
+</main>
+
+    <div id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Visualização do Documento</h3>
+                <button class="close-btn" aria-label="Fechar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe src="" frameborder="0" title="Visualização do PDF"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+          
+      </div>
+    <footer>
+        <div class="footer-content">
+            <a class="prado-logo" href="https://sinodalprado.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site Sinodal Prado">
+                <img src="../../imagens/footer/prado-logo.png" alt="Sinodal Prado logo" />
+            </a>
+            <div class="div-expediente">
+              <img src="../../imagens/expediente.jpg" alt="Expediente da revista" class="expediente-image">
+            </div>
+            <div class="footer-info">
+                <p>Colégio Sinodal Prado</p>
+                <p>Revista Prado Acadêmico</p>
+                <p>© 2025 Todos os direitos reservados</p>
+                <p><br>Site desenvolvido por: <a class="ln-fran" href="https://www.linkedin.com/in/franciscodvpereira">Francisco Pereira</a> e <a class="ln-fran" href="https://www.instagram.com/matheus.ssouzx/">Matheus Souza</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

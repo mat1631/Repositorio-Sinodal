@@ -1,0 +1,7 @@
+# Repositório Sinodal Prado
+
+Este repositório foi criado para organizar, preservar e disponibilizar trabalhos produzidos por alunos do Ensino Médio ao longo dos anos. A iniciativa surgiu da necessidade de manter um histórico acessível das produções acadêmicas, permitindo que novas turmas encontrem referências, fontes de inspiração e exemplos de projetos já realizados. Além de valorizar o esforço dos alunos que passaram pela escola, este espaço digital incentiva o compartilhamento de conhecimento e fortalece a cultura de aprendizado colaborativo.
+
+Aqui serão armazenados trabalhos diversos, como pesquisas, relatórios, apresentações e projetos, organizados por ano, turma, disciplina ou tipo de atividade. O objetivo é garantir que todo o conteúdo seja fácil de encontrar, visualizar e utilizar como apoio acadêmico. O site que acompanha este repositório foi desenvolvido pensando em simplicidade, organização e responsividade, possibilitando acesso fluido tanto em computadores quanto em dispositivos móveis, com uma estrutura leve e preparada para futuras atualizações.
+
+Professores e responsáveis podem adicionar novos materiais, atualizar informações ou reorganizar pastas sempre que necessário, enquanto alunos podem sugerir melhorias e apontar problemas. No geral, este repositório busca preservar a memória escolar e servir como um arquivo digital duradouro, auxiliando estudos, pesquisas e a evolução acadêmica das próximas gerações.

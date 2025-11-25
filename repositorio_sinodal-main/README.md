@@ -1,3 +1,0 @@
-# Repositório Sinodal Prado
-
-Olá 

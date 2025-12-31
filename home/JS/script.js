@@ -1,4 +1,3 @@
-// Modal PDF - Seu código original
 document.addEventListener('DOMContentLoaded', () => {
     const pdfButtons = document.querySelectorAll('.file-action');
     const modal = document.getElementById('pdfModal');
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Fechar modal com ESC
+
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // Carrossel
+ 
     const track = document.querySelector(".carousel-track");
     const cards = Array.from(track.children);
     const nextButton = document.querySelector(".carousel-button.next");

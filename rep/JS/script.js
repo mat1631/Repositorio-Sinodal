@@ -1,4 +1,3 @@
-// Modal PDF - Seu código original
 document.addEventListener('DOMContentLoaded', () => {
   const pdfButtons = document.querySelectorAll('.file-action');
   const modal = document.getElementById('pdfModal');
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  // Fechar modal com ESC
   window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modal.style.display === 'block') {
           modal.style.display = 'none';
@@ -46,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
   
-  // Carrossel
   const track = document.querySelector(".carousel-track");
   const cards = Array.from(track.children);
   const nextButton = document.querySelector(".carousel-button.next");
@@ -303,9 +300,7 @@ function baixarArquivo() {
     link.click();
   }
 
-  // =========================
-  // BUSCA NO REPOSITÓRIO + DESTAQUE
-  // =========================
+  
 
   const searchInput = document.getElementById('searchInput');
   const yearContents = document.querySelectorAll('.year-content');
@@ -313,18 +308,18 @@ function baixarArquivo() {
 
   if (searchInput && yearContents.length && fileCards.length) {
 
-      // Descobrir o ano de cada card a partir do botão anterior
+     
       fileCards.forEach(card => {
           const yearContent = card.closest('.year-content');
           if (yearContent) {
               const yearButton = yearContent.previousElementSibling;
               if (yearButton && yearButton.classList.contains('year-button')) {
-                  card.dataset.year = yearButton.textContent.trim(); // ex: "2025 - Edição Atual"
+                  card.dataset.year = yearButton.textContent.trim(); 
               }
           }
       });
 
-      // Escapa caracteres especiais pra usar com RegExp sem quebrar
+      
       function escapeRegExp(str) {
           return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       }
@@ -339,7 +334,7 @@ function baixarArquivo() {
               let algumVisivel = false;
 
               cards.forEach(card => {
-                  // Limpa destaques anteriores (volta o texto puro)
+                
                   const textos = card.querySelectorAll('.file-title, .file-description');
                   textos.forEach(element => {
                       const original = element.getAttribute('data-original-text');
@@ -362,7 +357,7 @@ function baixarArquivo() {
                   if (casa) {
                       card.style.display = '';
 
-                      // Se há busca e o card casa com a query, destacar
+                    
                       if (temBusca && textoCard.includes(query)) {
                           const safeQuery = escapeRegExp(queryRaw);
                           if (safeQuery.length > 0) {
@@ -376,7 +371,7 @@ function baixarArquivo() {
                                   );
                                   element.innerHTML = highlighted;
 
-                                  // Remove o destaque após 1.5s
+                                
                                   setTimeout(() => {
                                       element.innerHTML = original;
                                   }, 10000000000000);
@@ -391,20 +386,20 @@ function baixarArquivo() {
               });
 
               if (temBusca) {
-                  // Em modo de busca: abre anos com resultado, fecha anos sem
+                 
                   if (algumVisivel) {
                       content.classList.add('active');
                   } else {
                       content.classList.remove('active');
                   }
               } else {
-                  // Sem busca: mostra tudo e fecha os anos
+
                   cards.forEach(card => card.style.display = '');
                   content.classList.remove('active');
               }
           });
       }
 
-      // Dispara a cada tecla
+
       searchInput.addEventListener('input', aplicarBusca);
   }
